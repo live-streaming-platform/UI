@@ -1,0 +1,50 @@
+
+.page-container {
+    min-height: 100vh;
+    width: 100%;
+    background: url("../../../assets/images/background.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+}
+
+.page-content {
+    min-height: 100%;
+    width: 100%;
+    background: rgba(35, 38, 47, 0.5);
+}
+
+.left-menu {
+    width: 240px;
+    min-width: 12.5%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(32, 32, 40, 0.5);
+}
+
+.menu-logo-wrapper {
+    width: 100%;
+    padding: 33.5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-content__navigation {
+    max-height: 100px;
+    overflow-x: visible;
+    padding: 26px 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.navigation__user-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+}
+

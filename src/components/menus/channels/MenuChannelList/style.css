@@ -1,0 +1,24 @@
+.channel-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 5px;
+    width: 100%;
+}
+
+.channel-list__title {
+    padding: 0 20px 5px 20px;
+    width: 100%;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-align: start;
+    text-transform: uppercase;
+    color: rgb(224, 217, 246);
+
+}

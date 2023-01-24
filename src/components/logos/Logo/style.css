@@ -1,0 +1,50 @@
+@keyframes logo-text-animation {
+    0% {
+        color: rgba(255, 255, 255, 0.01);
+
+        -webkit-text-stroke: 1.27273px #4EC1F4;
+        text-shadow: 0 0 63.6364px #6ECBF5;
+    }
+    25% {
+        color: rgba(255, 255, 255, 0.01);
+
+        -webkit-text-stroke: 1.27273px #C252E1;
+        text-shadow: 0 0 63.6364px #C252E1;
+    }
+    75% {
+        color: rgba(255, 255, 255, 0.01);
+
+        -webkit-text-stroke: 1.27273px #E0D9F6;
+        text-shadow: 0 0 63.6364px #E0D9F6;
+    }
+    100% {
+        color: rgba(255, 255, 255, 0.01);
+
+        -webkit-text-stroke: 1.27273px #4EC1F4;
+        text-shadow: 0 0 63.6364px #6ECBF5;
+    }
+}
+
+
+.logo {
+    user-select: none;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-text-size-adjust: none;
+    font-size: 1.75em;
+    line-height: 2rem;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.01);
+
+    -webkit-text-stroke: 1.27273px #4EC1F4;
+    text-shadow: 0px 0px 63.6364px #6ECBF5;
+
+    animation-name: logo-text-animation;
+    animation-iteration-count: infinite;
+    animation-duration: var(--animation-time-common);
+}

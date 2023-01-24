@@ -1,0 +1,9 @@
+.avatar-image {
+    background: #E0D9F6;
+    border-radius: 50%;
+}
+
+.avatar-image.sm {
+    width: 30px;
+    height: 30px;
+}
