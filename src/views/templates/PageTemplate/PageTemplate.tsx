@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'
 import {Logo} from "../../../components/logos";
-import {MenuChannelList} from "../../../components/menus";
+import {MenuChannelList, NavigationActionMenu} from "../../../components/menus";
 import {NavigationSearch} from "../../../components/inputs";
 
 type PageTemplatePropsType = {
@@ -50,7 +50,8 @@ const PageTemplate = ({children = []}: PageTemplatePropsType) => {
                 <div className={'page-content__navigation'}>
                     <NavigationSearch/>
                     <div className={'navigation__user-actions'}>
-
+                        <NavigationActionMenu type={"notifications"}/>
+                        <NavigationActionMenu type={"userdata"}/>
                     </div>
                 </div>
                 <div className={'page-content__main'}>

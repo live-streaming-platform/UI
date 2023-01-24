@@ -40,11 +40,13 @@ const NavigationSearch = () => {
 
     return (
         <div ref={searchWrapperRef} onClick={() => handleClickInputFocus(inputRef)}
-             className={`navigation-search ${isSearchActive ? 'active' : null}`}>
-            <div className={'navigation-search__icon'}><SearchIcon/></div>
-            <input onChange={handleSearchInput}
-                   value={inputQuery} ref={inputRef} type="text"
-                   placeholder={'Search...'}/>
+             className={`navigation-search-wrapper ${isSearchActive ? 'active' : ""}`}>
+            <div className="navigation-search">
+                <div className={'navigation-search__icon'}><SearchIcon/></div>
+                <input onChange={handleSearchInput}
+                       value={inputQuery} ref={inputRef} type="text"
+                       placeholder={'Search...'}/>
+            </div>
         </div>
     );
 };

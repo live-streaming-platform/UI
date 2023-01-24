@@ -13,6 +13,8 @@
     background: rgba(35, 38, 47, 0.5);
 }
 
+
+
 .left-menu {
     width: 240px;
     min-width: 12.5%;
@@ -34,7 +36,7 @@
 
 .page-content__navigation {
     max-height: 100px;
-    overflow-x: visible;
+    overflow: visible;
     padding: 26px 50px;
     display: flex;
     align-items: flex-start;
@@ -42,9 +44,11 @@
 }
 
 .navigation__user-actions {
+    overflow: visible;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     gap: 24px;
+    max-height: 48px;
 }
 

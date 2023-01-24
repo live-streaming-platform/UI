@@ -1,0 +1,104 @@
+@keyframes action-item-animation {
+    0% {
+        box-shadow: 0px 0px 70px rgba(78, 193, 244, 0.2);
+    }
+    25% {
+        box-shadow: 0px 4px 70px rgba(194, 82, 225, 0.2);
+    }
+    75% {
+        box-shadow: 0px 0px 70px rgba(224, 217, 246, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 70px rgba(78, 193, 244, 0.2);
+    }
+}
+
+.action-item-wrapper {
+    overflow: visible;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border-radius: 24px;
+    box-shadow: 0px 0px 70px rgba(78, 193, 244, 0.2);
+    animation-name: action-item-animation;
+    animation-iteration-count: infinite;
+    animation-duration: var(--animation-time-common);
+    transition: 0.3s background-color, 0.3s height, 0.3s width, 0.3s ease-in-out;
+}
+
+.action-item-wrapper.active .action-item {
+    opacity: 0.5;
+}
+
+.action-item-wrapper.active .action-item__notifications-marker {
+    display: none;
+}
+
+
+.action-item {
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    background: #363A43;
+    color: #60646D;
+    opacity: 0.5;
+
+}
+
+.action-item__content {
+    width: 100%;
+    padding: 0 10px;
+    display: none;
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.action-item-wrapper.active .action-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    opacity: 1;
+}
+
+.action-item-wrapper.active {
+    height: 300px;
+    width: 300px;
+    border-radius: 12px;
+    background: #363A43;
+    opacity: 0.5;
+}
+
+
+
+.action-item__notifications-marker {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.test {
+    padding: 10px 12px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(35, 38, 47, 0.7);
+    border-radius: 12px;
+}
+
+
+
