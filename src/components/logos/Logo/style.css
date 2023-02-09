@@ -48,3 +48,7 @@
     animation-iteration-count: infinite;
     animation-duration: var(--animation-time-common);
 }
+
+.logo:hover{
+    cursor: pointer;
+}

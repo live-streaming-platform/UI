@@ -14,24 +14,27 @@
 }
 
 .action-item-wrapper {
+    background: #363A43;
+    opacity: 0.5;
     overflow: visible;
-    height: 48px;
+    max-height: 48px;
     width: 48px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
-    border-radius: 24px;
+    border-radius: 12px;
     box-shadow: 0px 0px 70px rgba(78, 193, 244, 0.2);
     animation-name: action-item-animation;
     animation-iteration-count: infinite;
     animation-duration: var(--animation-time-common);
-    transition: 0.3s background-color, 0.3s height, 0.3s width, 0.3s ease-in-out;
+    transition: 0.3s background-color, 0.3s max-height, 0.3s max-width, 0.3s ease-in-out;
 }
 
 .action-item-wrapper.active .action-item {
     opacity: 0.5;
 }
+
 
 .action-item-wrapper.active .action-item__notifications-marker {
     display: none;
@@ -39,6 +42,7 @@
 
 
 .action-item {
+    position: relative;
     font-family: 'Raleway', serif;
     font-style: normal;
     font-weight: 400;
@@ -47,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 12px;
     min-width: 48px;
     min-height: 48px;
     cursor: pointer;
@@ -58,29 +62,37 @@
 }
 
 .action-item__content {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
     padding: 0 10px;
-    display: none;
+    visibility: hidden;
     opacity: 0;
-    transition: 1s opacity;
+    transition: opacity 0.05s, visibility 0s;
 }
 
-.action-item-wrapper.active .action-item__content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.action-item__content.active {
     width: 100%;
+    height: 100%;
     opacity: 1;
+    visibility: visible;
 }
 
 .action-item-wrapper.active {
-    height: 300px;
-    width: 300px;
+    overflow: hidden;
     border-radius: 12px;
-    background: #363A43;
-    opacity: 0.5;
 }
 
+.action-item-wrapper.active.notifications {
+    overflow: visible;
+    max-height: 600px;
+    width: 300px;
+}
+
+.action-item-wrapper.active.userdata {
+    max-height: 600px;
+}
 
 
 .action-item__notifications-marker {
@@ -88,17 +100,5 @@
     right: 0;
     bottom: 0;
 }
-
-.test {
-    padding: 10px 12px;
-    width: 100%;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(35, 38, 47, 0.7);
-    border-radius: 12px;
-}
-
 
 

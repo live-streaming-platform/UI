@@ -1,0 +1,69 @@
+.main-page-content {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.main-page-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.main-page-content__header {
+    width: 100%;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #E0D9F6;
+}
+
+.main-page-content__channels {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.domain-channel {
+    width: 200%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+.secondary-channels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    height: inherit;
+}
+
+.secondary-channel {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.common-channels {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+.common-channel{
+    aspect-ratio: 16/9;
+    padding: 10px 5px;
+}
+

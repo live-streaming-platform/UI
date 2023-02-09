@@ -1,0 +1,22 @@
+.action-menu__item {
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    min-width: 48px;
+    min-height: 48px;
+    cursor: pointer;
+    background: #363A43;
+    color: #60646D;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+.action-menu__item:hover {
+    background-color: rgba(54, 58, 67, 0.3);
+}

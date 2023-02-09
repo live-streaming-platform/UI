@@ -2,6 +2,7 @@ import React from 'react';
 import {Avatar} from "../../../images";
 import {NotificationMarker} from "../../../common";
 import './style.css'
+import {useNavigate} from "react-router";
 
 type MenuChannelPropsType = {
     name: string,
@@ -12,8 +13,10 @@ type MenuChannelPropsType = {
 
 
 const MenuChannel = ({name, category, image, viewers}: MenuChannelPropsType) => {
+    const navigate = useNavigate();
+
     return (
-        <div className="channel-info">
+        <div className="channel-info" onClick={() => navigate(`/${name}`)}>
             <div className="channel-info__data">
                 <Avatar image={image}/>
                 <div className="channel-info__description">

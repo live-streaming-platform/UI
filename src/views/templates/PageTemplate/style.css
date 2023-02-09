@@ -8,6 +8,7 @@
 }
 
 .page-content {
+    margin-left: 240px;
     min-height: 100%;
     width: 100%;
     background: rgba(35, 38, 47, 0.5);
@@ -16,6 +17,7 @@
 
 
 .left-menu {
+    position: fixed;
     width: 240px;
     min-width: 12.5%;
     min-height: 100%;

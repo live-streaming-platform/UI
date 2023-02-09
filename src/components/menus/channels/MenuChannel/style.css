@@ -9,6 +9,7 @@
 
 .channel-info:hover {
     background: rgba(224, 217, 246, 0.1);
+    cursor: pointer;
 }
 
 .channel-info__data {

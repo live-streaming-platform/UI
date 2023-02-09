@@ -26,14 +26,15 @@
     background: #363A43;
     opacity: 0.5;
     border-radius: 6px;
-
 }
 
 .navigation-search-wrapper.active {
+    opacity: 0.9;
     height: 300px;
 }
 
 .navigation-search-wrapper {
+    z-index: 5;
     height: 48px;
     background: #363A43;
     opacity: 0.5;
@@ -46,7 +47,7 @@
     justify-content: flex-start;
     gap: 10px;
     flex-direction: column;
-    transition: 0.5s height;
+    transition: 0.5s height, 0.5s opacity;
 }
 
 
@@ -74,7 +75,7 @@
 }
 
 .navigation-search input:focus {
-    color: #E0D9F6;
+    color: #fff;
 }
 
 .navigation-search__icon {
@@ -82,4 +83,5 @@
     align-items: center;
     justify-content: flex-start;
 }
+
 

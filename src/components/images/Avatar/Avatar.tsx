@@ -9,6 +9,7 @@ type AvatarImageProps = {
 const Avatar = ({image, type = 'sm'}: AvatarImageProps) => {
     return (
         <div className={`avatar-image ${type}`}>
+            {image}
         </div>
     );
 };

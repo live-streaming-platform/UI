@@ -8,13 +8,14 @@ type MenuChannelListPropsType = {
 }
 
 const MenuChannelList = ({title, channelList}: MenuChannelListPropsType) => {
-    return (
+    return channelList.length > 0 ? (
         <div className="channel-list">
             <p className={'channel-list__title'}>{title}</p>
             {channelList.map(channel => <MenuChannel key={channel.name} name={channel.name} category={channel.category}
                                                      viewers={channel.viewers} image={channel?.image}/>)}
         </div>
-    );
+    ) : null;
+
 };
 
 export default MenuChannelList;

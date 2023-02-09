@@ -1,0 +1,48 @@
+@keyframes button-animation {
+    0% {
+        box-shadow: 0px 0px 10px rgba(78, 193, 244, 0.2);
+    }
+    25% {
+        box-shadow: 0px 0px 10px rgba(194, 82, 225, 0.2);
+    }
+    75% {
+        box-shadow: 0px 0px 10px rgba(224, 217, 246, 0.2);
+    }
+    100% {
+        box-shadow: 0px 0px 10px rgba(78, 193, 244, 0.2);
+    }
+}
+
+.app-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 36px;
+    outline: none;
+    background: none;
+    border: none;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color: #E0D9F6;
+    transition: 0.3s ease-in-out;
+    padding: 5px 10px;
+    gap: 10px;
+
+    min-width: 40px;
+    height: 30px;
+
+    background: rgba(54, 58, 67, 0.3);
+    animation-name: button-animation;
+    animation-iteration-count: infinite;
+    animation-duration: var(--animation-time-common);
+    border-radius: 6px;
+}
+
+.app-button:hover {
+    background: rgb(78, 193, 244, 0.3);
+}

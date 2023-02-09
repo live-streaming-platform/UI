@@ -7,3 +7,8 @@
     width: 30px;
     height: 30px;
 }
+
+.avatar-image.lg {
+    width: 64px;
+    height: 64px;
+}
